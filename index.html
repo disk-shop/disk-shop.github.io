@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+function Input(){
+login_ok = false;
+user_name = "";
+password = "";
+user_name = prompt("Логин","");
+user_name = user_name.toLowerCase();
+password = prompt("Пароль","");
+password = password.toLowerCase();
+if (user_name=="adminshop" && password=="diskpass") {
+ login_ok = true;
+ window.location = "profile.html";
+}
+
+if (login_ok==false) alert("Неверный логин или пароль!");
+}
+</script>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>DISK-SHOP - магазин по продажу оптичних дисків</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <p>
+      <div class="head">
+      <div class="sitename"><a href="index.html">DISK-SHOP</a></div>
+      <div class="namesp"><a href="catalog.html">Каталог</a></div>
+      <div class="namesp"><a href="faq.html">FAQ</a></div>
+      <div class="namesp"><a href="about.html">Про магазин</a></div>
+      <div class="namesp"><a href="contact.html">Контакти</a></div>
+      <div class="login" align="center"><form><input type="Button" value="Войти" onClick="Input()"></form></div>
+      </div>
+    </p>
+    </header>
+    <main>
+      <article>
+       <p class="ds">DISK-SHOP - це магазин дисків на Ваш смак і вибір. Для Вас представлено всі можливі види розмірів пам'яті для будь-яких записів. Чим більше пам'яті, тим краще, але і дорожче.</p>
+    </article>
+    </main>
+    <footer>
+      © DISK-SHOP.INC Всі права захищено.
+    </footer>
+  </body>
+</html>
